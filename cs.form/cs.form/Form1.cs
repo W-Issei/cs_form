@@ -15,6 +15,8 @@ namespace cs.form
         public Form1()
         {
             InitializeComponent();
+            Class1 aaa = new Class1();
+            Controls.Add(aaa);
         }
     }
 }
