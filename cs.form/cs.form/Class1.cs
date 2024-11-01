@@ -10,10 +10,13 @@ namespace cs.form
 {
     class Class1:Button
     {
-        public Class1(int x,int y,int width,int height)
+        public Class1(int id,int x,int y,int width,int height)
         {
             Click += OnClick;
-            Text = "ボタン";
+
+            Text = id.ToString();
+
+            Console.Write(Text);
 
             Location = new System.Drawing.Point(x,y);
 
@@ -21,7 +24,7 @@ namespace cs.form
         }
         public void OnClick(object sender, EventArgs s)
         {
-            MessageBox.Show("asdf");
+            MessageBox.Show(Text);
         }
     }
 }
