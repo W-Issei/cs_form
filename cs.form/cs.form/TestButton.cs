@@ -8,10 +8,12 @@ using System.Windows.Forms;
 
 namespace cs.form
 {
-    class Class1:Button
+    class TestButton:Button
     {
-        public Class1(int id,int x,int y,int width,int height)
+        Form1 _form1;
+        public TestButton(Form1 form1, int id,int x,int y,int width,int height)
         {
+            _form1 = form1;
             Click += OnClick;
 
             Text = id.ToString();
@@ -24,7 +26,7 @@ namespace cs.form
         }
         public void OnClick(object sender, EventArgs s)
         {
-            MessageBox.Show(Text);
+            _form1.LabelUpdate(Text);
         }
     }
 }

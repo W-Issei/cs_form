@@ -12,17 +12,20 @@ namespace cs.form
 {
     public partial class Form1 : Form
     {
+        testlabel _testlabel;
         public Form1()
         {
             InitializeComponent();
 
             for(int i = 0; i < 10; i++)
             {
-                Class1 aaa = new Class1(i,(i % 5) * 100,(i / 5)*100,  100, 100);
+                TestButton aaa = new TestButton(this,i,(i % 5) * 100,(i / 5)*100,  100, 100);
                 Controls.Add(aaa);
 
             }
 
+            _testlabel = new testlabel("ラベルです", 10, 300, 100, 500);
+            Controls.Add(_testlabel);
 
             
             //Class1 aaa = new Class1(0,0,100,100);
@@ -56,5 +59,10 @@ namespace cs.form
             //Controls.Add(i);
             
         }
+    public void LabelUpdate(string str)
+    {
+        _testlabel.Textupdate(str);
     }
+    }
+
 }
