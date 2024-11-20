@@ -21,6 +21,16 @@ namespace cs.form
 
             Size = new System.Drawing.Size(width, height);
         }
+
+        public string TextReplacement(string str)
+        {
+            string temp = Text;
+
+            Text = str;
+
+            return temp;
+
+        }
     }
 }
 

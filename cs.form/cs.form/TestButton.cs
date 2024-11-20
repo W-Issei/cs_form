@@ -28,8 +28,14 @@ namespace cs.form
 
             Size = new System.Drawing.Size(width,height);
         }
+        /// <summary>
+        /// ボタンをクリックした際の処理
+        /// </summary>
+        /// <param name="str"></param>
         public void OnClick(object sender, EventArgs s)
         {
+            string t = _form1.ButtonLabelReplacement(Text);
+            Text = t;
             _form1.LabelTextupdate(Text);
         }
     }

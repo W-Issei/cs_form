@@ -17,10 +17,8 @@ namespace cs.form
 
         TestTextBox _TestTextBox;
 
-        Button1 _Button1;
-
-        TextBox1 _TextBox1;
-
+        //Button1 _Button1;
+        //TextBox1 _TextBox1;
 
         public Form1()
         {
@@ -50,7 +48,7 @@ namespace cs.form
             
 
 
-            _testlabel = new testlabel("ラベルです", 10, 300, 100, 500);
+            _testlabel = new testlabel("ラベルです", 10, 300, 100, 50);
             Controls.Add(_testlabel);
 
             _TestTextBox = new TestTextBox("てきすとぼっくすです", 10, 400, 500, 100);
@@ -58,14 +56,15 @@ namespace cs.form
             Controls.Add(_TestTextBox);
 
 
+            //課題4のやりかけ
+            //Button1 cc= new Button1(this, "aa", 20, 500, 300, 100);
+            //Controls.Add(cc);
+            //string str1 = ;
+            //
+            //_TextBox1 = new TextBox1("てきすとぼっくす", 10, 600, 500, 100);
+            //
+            //Controls.Add(_TextBox1);
 
-            Button1 cc= new Button1(this, "aa", 20, 500, 300, 100);
-            Controls.Add(cc);
-            string str1 = ;
-
-            _TextBox1 = new TextBox1("てきすとぼっくす", 10, 600, 500, 100);
-
-            Controls.Add(_TextBox1);
 
             //Class1 aaa = new Class1(0,0,100,100);
             //Controls.Add(aaa);
@@ -98,9 +97,17 @@ namespace cs.form
             //Controls.Add(i);
 
         }
+        
         public void LabelTextupdate(string str)
         {
             _testlabel.Textupdate(str);
+        }
+
+        //まずform1にクラス作成
+        public string ButtonLabelReplacement(string str)
+        {
+            string s = _TestTextBox.TextReplacement(str);
+            return s;
         }
 
     }

@@ -46,9 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Button1.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="Button1.cs" />
     <Compile Include="TestButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -66,9 +64,7 @@
     <Compile Include="TestTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="TextBox1.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="TextBox1.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
