@@ -8,22 +8,17 @@ using System.Windows.Forms;
 
 namespace cs.form
 {
-    internal class testlabel:Label
+    class TextBox1 : TextBox
     {
-        public testlabel(string str, int x, int y, int width, int height)
+        public TextBox1(string str1, int x, int y, int width, int height)
         {
 
-            Text = str;
+            Text = str1;
 
 
-            Location = new Point(x, y);
+            Location = new System.Drawing.Point(x, y);
 
             Size = new System.Drawing.Size(width, height);
         }
-        public void Textupdate(string str)
-        {
-            Text = str;
-        }
     }
 }
-

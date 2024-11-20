@@ -6,23 +6,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace cs.form
 {
-    internal class testlabel:Label
+    class TestTextBox : TextBox
     {
-        public testlabel(string str, int x, int y, int width, int height)
+        public TestTextBox(string str, int x, int y, int width, int height)
         {
 
             Text = str;
 
 
-            Location = new Point(x, y);
+            Location = new System.Drawing.Point(x, y);
 
             Size = new System.Drawing.Size(width, height);
-        }
-        public void Textupdate(string str)
-        {
-            Text = str;
         }
     }
 }
